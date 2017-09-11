@@ -1,0 +1,11 @@
+after installing cygwin on windows I still experienced several issues with installing awscli.
+the main reason wass the recognition of the anaconda python install within sygwin 
+the workaround is to install python seperatly within cygwin
+
+these were resolved through the following code:
+wget rawgit.com/transcode-open/apt-cyg/master/apt-cyg
+install apt-cyg /bin
+apt-cyg install python
+wget https://bootstrap.pypa.io/get-pip.py 
+python get-pip.py 
+pip ninstall awscli
